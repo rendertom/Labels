@@ -6,14 +6,14 @@ Collection of Label Themes and Script Snippets for Adobe After Effects script [L
 
 ## Themes ##
 
-* David Arbor theme <https://vimeo.com/davidarbor> [![button](img/theme_david_arbor.png)](URL)
-* Generic 16 CGP by Arne Niklas Jansson <http://androidarts.com/palette/16pal.htm> [![button](img/theme_generic_16_cgp.png)](https://github.com/rendertom/Clean-SL/blob/master/Clean%20SL.jsx)
-* Material theme based on Googme Material Design <https://material.io> [![button](img/theme_material.png)](URL)
-* Pastel colection of pastel colors [![button](img/theme_pastel.png)](URL)
-* Paul Conigliaro theme <http://conigs.com> [![button](img/theme_paul_conigliaro.png)](URL)
-* Pico-8 Game Console Palette by Lexaloffle <https://lexaloffle.com/pico-8.php> [![button](img/theme_pico8.png)](URL)
-* Ryan Summers theme <http://ryansummers.net> [![button](img/theme_ryan_summers.png)](URL)
-* Vivid almost random colors with bold hues [![button](img/theme_vivid.png)](URL)
+* David Arbor theme <https://vimeo.com/davidarbor> [![button](img/theme_david_arbor.png)](zip/Themes/David Arbor.theme.zip)
+* Generic 16 CGP by Arne Niklas Jansson <http://androidarts.com/palette/16pal.htm> [![button](img/theme_generic_16_cgp.png)](zip/Themes/Generic 16 CGP.theme.zip)
+* Material theme based on Googme Material Design <https://material.io> [![button](img/theme_material.png)](zip/Themes/Material.theme.zip)
+* Pastel colection of pastel colors [![button](img/theme_pastel.png)](zip/Themes/Pastel.theme.zip)
+* Paul Conigliaro theme <http://conigs.com> [![button](img/theme_paul_conigliaro.png)](zip/Themes/Paul Conigliaro.theme.zip)
+* Pico-8 Game Console Palette by Lexaloffle <https://lexaloffle.com/pico-8.php> [![button](img/theme_pico8.png)](zip/Themes/Pico-8.theme.zip)
+* Ryan Summers theme <http://ryansummers.net> [![button](img/theme_ryan_summers.png)](zip/Themes/Ryan Summers.theme.zip)
+* Vivid almost random colors with bold hues [![button](img/theme_vivid.png)](zip/Themes/Vivid.theme.zip)
 
 ## Snippets ##
 
