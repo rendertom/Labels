@@ -28,10 +28,12 @@ Labels script exposes following API:
 ``` javascript
 // Assuming myLayer is a Layer Object in composition:
 
+
 // Check if layer index matches Labels.index:
 if (myLayer.index === Labels.index) {
     alert('Eureka!');
 } // => 'Eureka!'
+
 
 // Set layers comment to Labels.hex color:
 myLayer.comment = Labels.hex;
@@ -47,17 +49,18 @@ var myLayer = myComposition.layers.addSolid(
     1
 );
 
+
 // Set layer name to Label.name
 myLayer.name = Labels.name;
 ```
 
 ## Themes ##
 
-* David Arbor theme <https://vimeo.com/davidarbor> [![button](img/theme_david_arbor.png)](zip/Themes/David%20Arbor.theme.zip)
-* Generic 16 CGP by Arne Niklas Jansson <http://androidarts.com/palette/16pal.htm> [![button](img/theme_generic_16_cgp.png)](zip/Themes/Generic%2016%20CGP.theme.zip)
-* Material theme based on Googme Material Design <https://material.io> [![button](img/theme_material.png)](zip/Themes/Material.theme.zip)
-* Pastel colection of pastel colors [![button](img/theme_pastel.png)](zip/Themes/Pastel.theme.zip)
-* Paul Conigliaro theme <http://conigs.com> [![button](img/theme_paul_conigliaro.png)](zip/Themes/Paul%20Conigliaro.theme.zip)
-* Pico-8 Game Console Palette by Lexaloffle <https://lexaloffle.com/pico-8.php> [![button](img/theme_pico8.png)](zip/Themes/Pico-8.theme.zip)
-* Ryan Summers theme <http://ryansummers.net> [![button](img/theme_ryan_summers.png)](zip/Themes/Ryan%20Summers.theme.zip)
-* Vivid almost random colors with bold hues [![button](img/theme_vivid.png)](zip/Themes/Vivid.theme.zip)
+* [David Arbor](https://vimeo.com/davidarbor) theme [![button](img/theme_david_arbor.png)](zip/Themes/David%20Arbor.theme.zip)
+* Generic Color Game Palette v16 CGP by [Arne Niklas Jansson](http://androidarts.com/palette/16pal.htm) [![button](img/theme_generic_16_cgp.png)](zip/Themes/Generic%2016%20CGP.theme.zip)
+* Material theme based on [Google Material Design](https://material.io) [![button](img/theme_material.png)](zip/Themes/Material.theme.zip)
+* Colection of pastel colors [![button](img/theme_pastel.png)](zip/Themes/Pastel.theme.zip)
+* [Paul Conigliaro](http://conigs.com) ( [@Conigs](https://twitter.com/conigs) ) theme [![button](img/theme_paul_conigliaro.png)](zip/Themes/Paul%20Conigliaro.theme.zip)
+* Pico-8 Game Console Palette by [Lexaloffle](https://lexaloffle.com/pico-8.php) [![button](img/theme_pico8.png)](zip/Themes/Pico-8.theme.zip)
+* [Ryan Summers](http://ryansummers.net) ( [@Oddernod](https://twitter.com/Oddernod) ) theme with custom Label Assignments [![button](img/theme_ryan_summers.png)](zip/Themes/Ryan%20Summers.theme.zip)
+* Vivid, almost random colors with bold hues [![button](img/theme_vivid.png)](zip/Themes/Vivid.theme.zip)
