@@ -23,13 +23,17 @@ Parent all layers with the same label color to a null.
 	app.endUndoGroup();
 
 	function parentLayersToNull(composition, label) {
-		var layer, nullLayer;
+		var layer, nullLayer, indexOffset;
+
+		indexOffset = 0;
 		for (var i = 1, il = composition.numLayers; i <= il; i++) {
-			layer = composition.layer(i);
+			layer = composition.layer(i + indexOffset);
 			if (layer.label !== label) continue;
 
 			if (!nullLayer) {
 				nullLayer = composition.layers.addNull();
+				nullLayer.label = label;
+				indexOffset = 1;
 			}
 
 			layer.parent = nullLayer;
