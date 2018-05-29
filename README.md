@@ -15,7 +15,7 @@ Collection of Script Snippets and Label Themes for Adobe After Effects script [L
 * [Push Layers Up By One](Snippets/Push%20Layers%20Up%20By%20One.js) - pushes layers with this label to the top of the layer stack one by one,
 * [Shy Everything Except](Snippets/Shy%20Everything%20Except.js) toggles 'solo' property of all layers that do not match given label color in composition,
 * [Toggle Shy](Snippets/Toggle%20Shy.js) - toggles 'shy' property of all layers with given label color in composition,
-* [Toggle Solo](Snippets/Toggle%20Solo.jsURL) - toggles 'shy' property of all layers with given label color in composition.
+* [Toggle Solo](Snippets/Toggle%20Solo.js) - toggles 'shy' property of all layers with given label color in composition.
 
 ``` javascript
 Labels script exposes following API:
