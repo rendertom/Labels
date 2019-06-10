@@ -56,7 +56,7 @@ myLayer.name = Labels.name;
 
 ## Themes ##
 
-* [David Arbor](https://vimeo.com/davidarbor) theme [![button](img/theme_david_arbor.png)](zip/Themes/David%20Arbor.theme.zip)
+* [David Arbor](https://www.davidarbor.com/) theme [![button](img/theme_david_arbor.png)](zip/Themes/David%20Arbor.theme.zip)
 * Generic Color Game Palette v16 CGP by [Arne Niklas Jansson](http://androidarts.com/palette/16pal.htm) [![button](img/theme_generic_16_cgp.png)](zip/Themes/Generic%2016%20CGP.theme.zip)
 * Material theme based on [Google Material Design](https://material.io) [![button](img/theme_material.png)](zip/Themes/Material.theme.zip)
 * Colection of pastel colors [![button](img/theme_pastel.png)](zip/Themes/Pastel.theme.zip)
