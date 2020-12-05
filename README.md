@@ -4,14 +4,22 @@
 
 Collection of Script Snippets and Label Themes for Adobe After Effects script [Labels](https://aescripts.com/labels/)
 
+## How to ##
+
+1. In the Labels interface click a button with text **S** (settings) and chose **Open Custom Shortcuts Editor**,
+2. In the **key:** section assign a shortcut to be used, say `shift + m`, and select a snippet by clicking on `...` and navigating to a file,
+3. Confirm changes by clicking on **Save Shortcuts for Scripts**,
+4. Back in AE hold down the shortcut key you assigned in step #2 `shift + m`, and click on any label swatch in Labels interface - this will fire-up the script that is linked to this shortcut.
+
+
 ## Snippets ##
 
-* [Copy Color To Clipboard](Snippets/Copy%20Color%20To%20Clipboard.js) - copies labels HEX color to clipboard.
-* [Create Shape Layer](Snippets/Create%20Shape%20Layer.js) - creates a full sized Shape Layer and sets Fill color label color,
-* [Create Solid Layer](Snippets/Create%20Solid%20Layer.js) - creates a full sized Solid Layer and sets its source color label color,
+* [Copy Color To Clipboard](Snippets/Copy%20Color%20To%20Clipboard.js) - copies labels HEX color to the clipboard,
+* [Create Shape Layer](Snippets/Create%20Shape%20Layer.js) - creates a full sized Shape Layer and sets Fill color to the label color,
+* [Create Solid Layer](Snippets/Create%20Solid%20Layer.js) - creates a full sized Solid Layer and sets its source color to the label color,
 * [Group Layers](Snippets/Group%20Layers.js) - groups all layers with same label color together underneath the topmost layer with that color,
 * [Parent Layers to Null](Snippets/Parent%20Layers%20to%20Null.js) - parents all layers with the same label color to a null,
-* [Push Layers Back By One](Snippets/Push%20Layers%20Back%20By%20One.js) - push layers with this label to the bottom of the layer stack one by one,
+* [Push Layers Back By One](Snippets/Push%20Layers%20Back%20By%20One.js) - pushes layers with this label to the bottom of the layer stack one by one,
 * [Push Layers Up By One](Snippets/Push%20Layers%20Up%20By%20One.js) - pushes layers with this label to the top of the layer stack one by one,
 * [Shy Everything Except](Snippets/Shy%20Everything%20Except.js) toggles 'solo' property of all layers that do not match given label color in composition,
 * [Toggle Shy](Snippets/Toggle%20Shy.js) - toggles 'shy' property of all layers with given label color in composition,
