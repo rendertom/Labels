@@ -1,0 +1,35 @@
+name: Build and release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # https://github.com/marketplace/actions/zip-release
+      - name: Archive snippets
+        uses: thedoctor0/zip-release@main
+        with:
+          filename: 'Snippets.zip'
+          path: './Snippets'
+      - name: Archive themes
+        uses: thedoctor0/zip-release@main
+        with:
+          filename: 'Themes.zip'
+          path: './Themes'
+
+      # https://github.com/marketplace/actions/gh-release
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: assets
+          files: |
+            Snippets.zip
+            Themes.zip
