@@ -2,17 +2,16 @@
 
 # Labels #
 
-Collection of Script Snippets and Label Themes for Adobe After Effects script [Labels](https://aescripts.com/labels/)
+Collection of script Snippets and label Themes for Adobe After Effects script [Labels](https://aescripts.com/labels/)
 
 ## How to ##
 
-1. In the Labels interface click a button with text **S** (settings) and chose **Open Custom Shortcuts Editor**,
-2. In the **key:** section assign a shortcut to be used, say `shift + m`, and select a snippet by clicking on `...` and navigating to a file,
-3. Confirm changes by clicking on **Save Shortcuts for Scripts**,
-4. Back in AE hold down the shortcut key you assigned in step #2 `shift + m`, and click on any label swatch in Labels interface - this will fire-up the script that is linked to this shortcut.
+Read how to use all of this in the [documentation](https://labels.rendertom.com/#/)
 
 
 ## Snippets ##
+
+Download all snippets [here](https://github.com/rendertom/Labels/releases/download/assets/Snippets.zip)
 
 * [Copy Color To Clipboard](Snippets/Copy%20Color%20To%20Clipboard.js) - copies labels HEX color to the clipboard,
 * [Create Shape Layer](Snippets/Create%20Shape%20Layer.js) - creates a full sized Shape Layer and sets Fill color to the label color,
@@ -23,52 +22,58 @@ Collection of Script Snippets and Label Themes for Adobe After Effects script [L
 * [Push Layers Up By One](Snippets/Push%20Layers%20Up%20By%20One.js) - pushes layers with this label to the top of the layer stack one by one,
 * [Shy Everything Except](Snippets/Shy%20Everything%20Except.js) toggles 'solo' property of all layers that do not match given label color in composition,
 * [Toggle Shy](Snippets/Toggle%20Shy.js) - toggles 'shy' property of all layers with given label color in composition,
-* [Toggle Solo](Snippets/Toggle%20Solo.js) - toggles 'shy' property of all layers with given label color in composition.
+* [Toggle Solo](Snippets/Toggle%20Solo.js) - toggles 'solo' property of all layers with given label color in composition.
 
 ``` javascript
-Labels script exposes following API:
-    index (Number) label index,
-    hex   (String) label HEX color,
-    rgb   (Array)  label RGB color [0-255, 0-255, 0-255],
-    name  (String) label name
+Labels script exposes the following API:
+
+index (Number)    // label index,
+hex (String)      // label HEX color,
+rgb ([Number])    // label RGB color [0-255, 0-255, 0-255]
+name (String)     // label name
 ```
 
 ``` javascript
-// Assuming myLayer is a Layer Object in composition:
-
-
-// Check if layer index matches Labels.index:
-if (myLayer.index === Labels.index) {
-    alert('Eureka!');
-} // => 'Eureka!'
-
-
-// Set layers comment to Labels.hex color:
-myLayer.comment = Labels.hex;
-
+// Get an active composition
+var composition = app.project.activeItem;
+if (!composition || !(composition instanceof CompItem)) {
+  return alert('Please select a composition first');
+}
 
 // Create a Solid Layer with base color of Labels.rgb
-// (assumes that myComposition is active Comp Item)
-var myLayer = myComposition.layers.addSolid(
-    Labels.rgb / 255,
-    'My Layer',
-    myComposition.width,
-    myComposition.height,
-    1
+var layer = composition.layers.addSolid(
+  Labels.rgb / 255,
+  'My Layer',
+  composition.width,
+  composition.height,
+  1
 );
 
+// Set layers comment to Labels.hex color:
+layer.comment = Labels.hex;
 
 // Set layer name to Label.name
 myLayer.name = Labels.name;
+
+// Check if layer index matches Labels.index:
+var layerIndex = layer.index;
+var labelsIndex = Labels.index;
+if (layerIndex === labelsIndex) {
+  alert('Layer index of ' layerIndex + ' matches the label index of ' + labelsIndex);
+} else {
+  alert('Layer index of ' + layerIndex + ' does not match the label index of ' + labelsIndex);
+}
 ```
 
 ## Themes ##
 
-* [David Arbor](https://www.davidarbor.com/) theme [![button](img/theme_david_arbor.png)](zip/Themes/David%20Arbor.theme.zip)
-* Generic Color Game Palette v16 CGP by [Arne Niklas Jansson](http://androidarts.com/palette/16pal.htm) [![button](img/theme_generic_16_cgp.png)](zip/Themes/Generic%2016%20CGP.theme.zip)
-* Material theme based on [Google Material Design](https://material.io) [![button](img/theme_material.png)](zip/Themes/Material.theme.zip)
-* Colection of pastel colors [![button](img/theme_pastel.png)](zip/Themes/Pastel.theme.zip)
-* [Paul Conigliaro](http://conigs.com) ( [@Conigs](https://twitter.com/conigs) ) theme [![button](img/theme_paul_conigliaro.png)](zip/Themes/Paul%20Conigliaro.theme.zip)
-* Pico-8 Game Console Palette by [Lexaloffle](https://lexaloffle.com/pico-8.php) [![button](img/theme_pico8.png)](zip/Themes/Pico-8.theme.zip)
-* [Ryan Summers](http://ryansummers.net) ( [@Oddernod](https://twitter.com/Oddernod) ) theme with custom Label Assignments [![button](img/theme_ryan_summers.png)](zip/Themes/Ryan%20Summers.theme.zip)
-* Vivid, almost random colors with bold hues [![button](img/theme_vivid.png)](zip/Themes/Vivid.theme.zip)
+Download all themes [here](https://github.com/rendertom/Labels/releases/download/assets/Themes.zip) or pick the one you like from the list below (and save it with extension **.theme**).
+
+* [David Arbor](https://www.davidarbor.com/) theme [![button](img/theme_david_arbor.png)](Themes/David%20Arbor.theme)
+* Generic Color Game Palette v16 CGP by [Arne Niklas Jansson](http://androidarts.com/palette/16pal.htm) [![button](img/theme_generic_16_cgp.png)](Themes/Generic%2016%20CGP.theme)
+* Material theme based on [Google Material Design](https://material.io) [![button](img/theme_material.png)](Themes/Material.theme)
+* Colection of pastel colors [![button](img/theme_pastel.png)](Themes/Pastel.theme)
+* [Paul Conigliaro](http://conigs.com) ( [@Conigs](https://twitter.com/conigs) ) theme [![button](img/theme_paul_conigliaro.png)](Themes/Paul%20Conigliaro.theme)
+* Pico-8 Game Console Palette by [Lexaloffle](https://lexaloffle.com/pico-8.php) [![button](img/theme_pico8.png)](Themes/Pico-8.theme)
+* [Ryan Summers](http://ryansummers.net) ( [@Oddernod](https://twitter.com/Oddernod) ) theme with custom Label Assignments [![button](img/theme_ryan_summers.png)](Themes/Ryan%20Summers.theme)
+* Vivid, almost random colors with bold hues [![button](img/theme_vivid.png)](Themes/Vivid.theme)
